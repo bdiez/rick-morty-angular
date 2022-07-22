@@ -1,0 +1,16 @@
+<h1>Listado de Personajes</h1>
+<br>
+
+<div fxLayout="row wrap"
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="20px">
+
+    <div fxFlex="20"
+         fxFlex.lg="15"
+         fxFlex.sm="30"
+         *ngFor="let character of characters">
+       
+        <app-character-detail [character]="character"></app-character-detail>
+    </div>
+</div>
