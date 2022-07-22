@@ -14,11 +14,7 @@ export class CharactersComponentComponent implements OnInit {
   constructor(private service:CharacterService) { }
 
   ngOnInit(): void {
-    this.service.findCharacters()
-      .subscribe(characters => {this.characters = characters.results;
-        console.log(characters);
-      });
-
+    this.service.findCharacters().subscribe(characters => this.characters = characters.results);
   }
 
 }

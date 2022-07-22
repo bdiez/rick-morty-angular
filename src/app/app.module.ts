@@ -6,6 +6,10 @@ import { CharactersComponentComponent } from './components/characters-component/
 import { CharacterDetailComponent } from './components/character-detail/character-detail.component';
 
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +19,9 @@ import { HttpClientModule } from "@angular/common/http";
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

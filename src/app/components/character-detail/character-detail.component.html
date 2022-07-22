@@ -1,11 +1,9 @@
-<div class="media">
-    <div class="media-left media-middle">
-      <a href="#">
-        <img class="media-object" src="{{character.image}}">
-      </a>
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading">{{character.name}}</h4>
-      <p>{{character.location.name}}</p>
-    </div>
-</div>
+<mat-card>
+  <mat-card-title-group>
+    <mat-card-title>{{character.name}}</mat-card-title>
+    <mat-card-subtitle>{{character.status}}</mat-card-subtitle>
+  </mat-card-title-group>
+  <img mat-card-xl-image [src]="character.image" [alt]="character.name">
+ 
+</mat-card>
+    

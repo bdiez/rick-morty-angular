@@ -21,6 +21,5 @@ export enum Species{
     Alien = "Alien",
     Animal = "Animal",
     Human = "Human",
-    Humanoid = "Humanoid",
-    
+    Humanoid = "Humanoid"   
 }
